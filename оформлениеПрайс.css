@@ -1,0 +1,103 @@
+.menu {
+		display: grid;
+		text-align: center;
+		list-style-type: none;
+        padding: 80px 20px 110px 0px;
+		font-family: Courier, monospace;
+		grid-template-areas: 
+			"portfolio price info main main main . aboutMe kontact"
+    }
+		
+		.portfolioNav { grid-area: portfolio; }
+		.priceNav { grid-area: price; }
+		.infoNav { grid-area: info; }
+		.mainNav { grid-area: main; font-size: 20px;}
+		.aboutMeNav { grid-area: aboutMe; }
+		.kontactNav { grid-area: kontact; }
+		
+		a {
+        text-decoration: none;
+		color: #464646;
+		}
+        .portfolioNav, .priceNav, .infoNav, .aboutMeNav, .kontactNav{
+            position: relative;
+            cursor: pointer;
+			font-size: 16px;
+        }
+		a:hover{
+			opacity: 50%;
+		}
+        .mainNav:hover{opacity: 100%;}
+		
+		.submenu {
+		  display: none;
+          position: absolute;
+          font-size: 14px;
+          padding: 15px 55px 0px;
+		  text-align: left;
+		  list-style-type: none;
+		  line-height: 1.5;
+		}
+		.menu li:hover .submenu {
+			display: block;
+		}
+		.packets{
+			display: grid;
+			text-align: center;
+			justify-content: center;
+			padding: 40px 30px;
+			color: #464646;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: 
+			"express full wedding"
+		}
+		.packet1{ grid-area: express;}
+		.packet2{ grid-area: full; 
+		border-left: 3px #464646 solid;
+		border-right: 3px #464646 solid }
+		.packet3{ grid-area: wedding;}
+		
+		.packet1, .packet2, .packet3{
+			font-family: Georgia;
+			font-size: 14px;
+			letter-spacing: 1px;
+			line-height: 1.5;
+			padding: 0px 50px;
+		}
+		img{
+			height: 220px;
+			object-fit: cover;
+		}
+		h2{
+			text-align: center;
+			font-family: Palatino Linotype;
+		}
+		@media all and (max-width: 1300px){
+			.packets{
+				grid-template-columns: 1fr;
+				grid-template-areas: 
+				"express"
+				"full" 
+				"wedding"
+			}
+			.packet2{
+				border: none
+			}
+		}
+		@media all and (max-width: 768px){
+		.menu {
+			padding: 40px 20px;
+			grid-template-areas: 
+				"main"
+				"portfolio"
+				"price" 
+				"info" 
+				"aboutMe" 
+				"kontact"
+		}
+		.submenu {
+          position: relative;
+		  text-align: center;
+		  padding: 15px;
+		}
+		}

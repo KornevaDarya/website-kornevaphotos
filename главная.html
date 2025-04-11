@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Дарья Корнева - фотограф, с которым комфортно. Индивидуальный подход к каждому клиенту. Красота, тепло, эмоции!">
+	<meta name="keywords" content="фотограф, фотограф Санкт-Петербург, фотограф спб, забронировать фотосессию, фотосессия под ключ, портретный фотограф, свадебный фотограф">
+    <title>KORNEVAPHOTOS | Фотограф Санкт-Петербург</title>
+    <link rel="stylesheet" href="оформлениеГлавная.css">
+</head>
+<body>
+	<ul class="menu">
+        <li class="portfolioNav"><a>ПОРТФОЛИО</a>
+    		<ul class="submenu">
+                    <li><a href="Индивидуальные.html">индивидуальные</a></li>
+                    <li><a href="Парные.html">парные</a></li>
+    				<li><a href="Свадебные.html">свадебные</a></li>
+    		</ul>
+        </li>
+        <a href="Прайс.html" class="priceNav">ПРАЙС</a>
+        <a href="Инфо.html" class="infoNav">ИНФО</a>
+        <a href="главная.html" class="mainNav">KORNEVAPHOTOS</a>
+        <a href="Обо мне.html" class="aboutMeNav">ОБО МНЕ</a>
+		<a href="Контакты.html" class="kontactNav">КОНТАКТЫ</a>
+	</ul>
+    
+	<div class="gallery">
+	<div class="images">
+        <img class="image" src="фотографии\27.jpeg" alt="Image 1">
+        <img class="image" src="фотографии\23.JPG" alt="Image 2">
+        <img class="image" src="фотографии\15.JPG" alt="Image 3">
+        <img class="image" src="фотографии\10.JPG" alt="Image 4">
+        <img class="image" src="фотографии\31.JPG" alt="Image 5">
+        <img class="image" src="фотографии\4.jpg" alt="Image 6">
+        <img class="image" src="фотографии\6.JPG" alt="Image 7">
+        <img class="image" src="фотографии\40.JPG" alt="Image 8">
+        <img class="image" src="фотографии\IMG_2245.JPG" alt="Image 9">
+	</div>
+	<div class="prev" onclick="scrollGallery(-1)">❮</div>
+	<div class="next" onclick="scrollGallery(1)">❯</div>
+	</div>
+	<div class="btn-up btn-up_hide">&#94;</div>
+	<div class="text">
+		<div class="quote">"You're beautiful, it's true"</div>
+		<div>Фотография — моя огромная любовь. Каждая съёмка — это уникальная и удивительная история. И я проживаю вашу историю вместе с вами: от начала и до конца.<br>
+			Я специализируюсь на индивидуальных женских съемках. И моя миссия – показать девушке ее красоту и наставить на путь принятия и любви к себе.<br>
+			Нет ничего более красивого, чем улыбка. Поэтому все мои фото-серии наполнены эмоциями и радостью. 
+			Чтобы спустя годы вы и ваши дети смотрели фотографии и ощущали всё это так, будто оно происходит прямо здесь, сейчас, сегодня!
+ </div>
+	</div>
+	<div class="booking">
+		<h2>Бронирование</h2>
+		<h3>Свяжитесь со мной, и я с удовольствием отвечу на все интересующие вас вопросы!</h3>
+		<form>
+			<input type="text" id="IDname" name="name" placeholder="Имя">
+			<input type="date" id="IDdate" name="date" placeholder="Дата">
+			<select id="IDphoto" name="photo">
+				  <option value="">Тип съемки</option>
+				  <option value="express">Экспресс</option>
+				  <option value="full">Полный формат</option>
+				  <option value="wedding">Свадебная</option>
+			 </select>
+			 <textarea id="IDmessage" name="message" placeholder="Ваше сообщение"></textarea>
+			 <input type="tel" id="IDtelephone" name="telephone" placeholder="Телефон">
+			<button type="submit">Отравить</button>
+		</form>
+	</div>
+<script src="главнаяСкрипт.js"></script>
+<script src="стрелка.js"></script>
+</body>
+</html>

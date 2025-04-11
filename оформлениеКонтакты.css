@@ -1,0 +1,90 @@
+		.menu {
+		display: grid;
+		text-align: center;
+		list-style-type: none;
+        padding: 80px 20px 110px 0px;
+		font-family: Courier, monospace;
+		grid-template-areas: 
+			"portfolio price info main main main . aboutMe kontact"
+		}
+		div{
+			display: grid;
+			justify-content: center;
+			grid-gap: 20%;
+			font-size: 14px;
+			line-height: 1.5;
+			font-family: Courier;
+			text-align: center;
+			align-items: center;
+			align-content: center;
+			grid-template-areas: 
+					"vk tel inst"
+		}
+		
+		.portfolioNav { grid-area: portfolio; }
+		.priceNav { grid-area: price; }
+		.infoNav { grid-area: info; }
+		.mainNav { grid-area: main; font-size: 20px;}
+		.aboutMeNav { grid-area: aboutMe; }
+		.kontactNav { grid-area: kontact; }
+		.vkLink { grid-area: vk;}
+		.telephone { grid-area: tel;}
+		.instLink { grid-area: inst;}
+		
+		a {
+        text-decoration: none;
+		color: #464646;
+		}
+        .portfolioNav, .priceNav, .infoNav, .aboutMeNav, .kontactNav{
+            position: relative;
+            cursor: pointer;
+			font-size: 16px;
+        }
+		a:hover{
+			opacity: 50%;
+		}
+        .mainNav:hover{opacity: 100%;}
+		
+		.submenu {
+		  display: none;
+          position: absolute;
+          font-size: 14px;
+          padding: 15px 55px 0px;
+		  text-align: left;
+		  list-style-type: none;
+		  line-height: 1.5;
+		}
+		.menu li:hover .submenu {
+			display: block;
+		}
+		img{
+			height: 32px;
+		}
+		.text{
+			padding: 50px 200px;
+			font-size: 16px;
+			text-align: center;
+			font-family: Georgia;
+			letter-spacing: 1px;
+			line-height: 2;
+			color: #464646;
+		}
+		
+		@media all and (max-width: 768px){
+			.menu {
+				padding: 40px 20px;
+				grid-template-areas: 
+					"main"
+					"portfolio"
+					"price" 
+					"info" 
+					"aboutMe" 
+					"kontact"
+			}
+			.submenu {
+			  position: relative;
+			  text-align: center;
+			  padding: 15px;
+			}
+		}
+		

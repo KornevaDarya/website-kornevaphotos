@@ -1,0 +1,213 @@
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.gallery {
+		display: flex;
+        align-items: center;
+        justify-content: center;
+		position: relative;
+		overflow: hidden;
+    }
+	.images {
+		display: flex;
+        transition: transform 0.5s ease;
+	}
+    .image {
+		width: 25%;
+        object-fit: cover;
+		padding: 0px 6px 0px 0px;
+    }
+	.prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+	
+	.menu {
+		display: grid;
+		text-align: center;
+		list-style-type: none;
+        padding: 80px 20px 110px 0px;
+		font-family: Courier, monospace;
+		grid-template-areas: 
+			"portfolio price info main main main . aboutMe kontact"
+    }
+		
+		.portfolioNav { grid-area: portfolio; }
+		.priceNav { grid-area: price; }
+		.infoNav { grid-area: info; }
+		.mainNav { grid-area: main; font-size: 20px;}
+		.aboutMeNav { grid-area: aboutMe; }
+		.kontactNav { grid-area: kontact; }
+		
+		a {
+        text-decoration: none;
+		color: #464646;
+		}
+        .portfolioNav, .priceNav, .infoNav, .aboutMeNav, .kontactNav{
+            position: relative;
+            cursor: pointer;
+			font-size: 16px;
+        }
+		a:hover{
+			opacity: 50%;
+		}
+        .mainNav:hover{opacity: 100%;}
+		
+		.submenu {
+		  display: none;
+          position: absolute;
+          font-size: 14px;
+          padding: 15px 55px 0px;
+		  text-align: left;
+		  list-style-type: none;
+		  line-height: 1.5;
+		}
+		.menu li:hover .submenu {
+			display: block;
+		}
+		.text {
+		display: grid;
+		font-family: Georgia;
+		text-align: right;
+		padding: 130px 110px;
+		font-size: 14px;
+		letter-spacing: 1px;
+		line-height: 2.2;
+		grid-column-gap: 20vw;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1.5fr 3fr;
+		}
+		.quote{
+			font-size: 36px;
+			text-align: left;
+		}
+		.booking{
+			background-image: url('фотографии/DSC_3961.jpg');
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+			padding: 140px 110px;
+			color: white;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		form{
+			display: grid;
+			grid-gap: 23px;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			width: 60%;
+		}
+		textarea{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+		input, select, textarea{
+			padding: 17px;
+			border: 2px solid white;
+			border-radius: 10px;
+			font-family: Georgia;
+			font-size: 14px;
+			background: transparent;
+			color: white;
+		}
+		input:focus, select:focus, textarea:focus{
+			outline: none;
+		}
+		button{
+			background-color: white;
+			color: #464646;
+			padding: 14px 20px;
+			border: none;
+			border-radius: 100px;
+			cursor: pointer;
+			width: 100px;
+			text-align: center;
+			align-self: center;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			justify-self: center;
+			width: 25%;
+			margin-top: 15px;
+		}
+		button:hover{
+			background-color: black;
+			color: white;
+		}
+			
+		h3{
+			padding-bottom: 20px;
+		}
+		h3, h2{
+			font-family: Palatino Linotype;
+		}
+		input::placeholder, textarea::placeholder{
+			color: white;
+			
+		}
+		option{
+			color: #464646;
+		}
+		.btn-up {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      width: 25px;
+      height: 25px;
+    }
+    .btn-up_hide {
+      display: none;
+    }
+	@media all and (max-width: 1000px){
+		form{
+			width: 80%
+		}
+	}
+	@media all and (max-width: 768px){
+		.menu {
+			padding: 40px 20px;
+			grid-template-areas: 
+				"main"
+				"portfolio"
+				"price" 
+				"info" 
+				"aboutMe" 
+				"kontact"
+		}
+		.submenu {
+          position: relative;
+		  text-align: center;
+		  padding: 15px;
+		}
+		.text{
+			grid-template-rows: 0.5fr 2fr;
+			grid-template-columns: 1fr;
+			padding: 90px 60px;
+		}
+		.booking{
+			padding: 80px 90px;
+		}
+	}
+	
