@@ -1,0 +1,15 @@
+@import "./setup/reset";
+@import "./setup/variables";
+@import "./setup/mixins";
+@import "./setup/custom-properties";
+@import "./setup/helpers";
+
+@import "./lib/swiper-bundle";
+@import "./lib/select2";
+
+@import "./blocks/page";
+@import "./blocks/cookies";
+@import "./blocks/header";
+@import "./blocks/burger";
+@import "./blocks/footer";
+

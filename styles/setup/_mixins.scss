@@ -1,0 +1,73 @@
+// from 768
+@mixin from-tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+// from 768
+@mixin to-tablet {
+    @media (max-width: $tablet-width - 1px) {
+        @content;
+    }
+}
+
+// from 1201
+@mixin from-notebook {
+    @media (min-width: $notebook-width) {
+        @content;
+    }
+}
+
+@mixin to-notebook {
+    @media (max-width: $notebook-width - 1px) {
+        @content;
+    }
+}
+
+// from 1440
+@mixin from-desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin to-desktop {
+    @media (max-width: $desktop-width - 1px) {
+        @content;
+    }
+}
+
+// from own width
+@mixin from-width($min-width) {
+    @if $min-width ==0 {
+        @content;
+    }
+
+    @else {
+        @media (min-width: $min-width) {
+            @content;
+        }
+    }
+}
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin flex($display: flex, $dir: row, $wrap: nowrap, $jc: center, $ai: center) {
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin vh($argument, $percent) {
+    #{$argument}: #{$percent}vh;
+    #{$argument}: calc(var(--vh, 1vh) * $percent);
+}

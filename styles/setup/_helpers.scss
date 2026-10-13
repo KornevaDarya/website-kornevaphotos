@@ -1,0 +1,135 @@
+html {
+    min-width: $html-min-width;
+    max-width: $html-max-width;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--main-black);
+}
+a {
+    display: inline-block;
+}
+a, button {
+    transition: color .2s ease;
+    cursor: pointer;
+}
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+::placeholder {
+    font-size: 16px;
+    opacity: .5;
+    color: var(--main-black);
+}
+input[placeholder] {
+    text-overflow: ellipsis
+}
+input::-moz-placeholder {
+    text-overflow: ellipsis
+}
+input:-moz-placeholder {
+    text-overflow: ellipsis
+}
+input:-ms-input-placeholder {
+    text-overflow: ellipsis
+}
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+:focus::-moz-placeholder {
+    color: transparent
+}
+:focus:-moz-placeholder {
+    color: transparent
+}
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select:focus, textarea:focus, input:focus {
+        font-size: 16px;
+    }
+}
+::-webkit-scrollbar {
+    background-color: #f2f2f2;
+    height: 5px;
+    width: 5px;
+    @include from-tablet {
+        height: 8px;
+        width: 8px;
+    }
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--main-black);
+    @include from-tablet {
+        border-radius: 10px;
+    }
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    @include from-tablet {
+        border-radius: 10px;
+    }
+}
+
+.section {
+    padding: 64px 0;
+    @include from-notebook {
+        padding: 84px 0;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 16px;
+    @include from-tablet {
+        padding: 0 24px;
+    }
+    @include from-desktop {
+        padding: 0;
+    }
+}
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    user-select: none; /* Non-prefixed version, currently  not supported by any browser */
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.d-mobile-none {
+    @include to-notebook {
+        display: none;
+    }
+}
+
+.d-notebook-none {
+    @include from-notebook {
+        display: none;
+    }
+}
+.d-none {
+    display: none;
+}
+
+.scrollOff {
+    overflow: hidden !important;
+}

@@ -1,0 +1,24 @@
+:root {
+    /* ---------- Sizes ---------- */
+    --html-min-width: 400px;
+    --html-max-width: 2500px;
+    --container: 1320px;
+
+    /* ---------- Colors ---------- */
+    --red: #E0001B;
+    --blue: #327FDA;
+    --blue-2: #2B70C1;
+    --blue-3: #2766B0;
+    --dark-blue: #030066;
+    --main-black: #1A2438;
+    --black: #242424;
+    --gray: #676767;
+    --bg-1: #EEF4F8;
+
+    /* ---------- Typography ---------- */
+    --font-helper: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-main: 'PT-Root-UI', var(--font-helper);
+    --font-title: 'Literata', var(--font-helper);
+    --font-header: 'Inter', var(--font-helper);
+
+}

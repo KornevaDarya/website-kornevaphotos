@@ -1,0 +1,17 @@
+.DS_store
+/.idea/
+/.vscode/
+/node_modules/
+/vendor/
+/dist/
+/cache/
+/temp
+/docs/
+/img/build/
+/video/
+
+.env
+.env.dev
+Makefile
+composer.lock
+package-lock.json

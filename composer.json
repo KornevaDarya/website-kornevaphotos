@@ -1,0 +1,25 @@
+{
+  "name": "kornevadarya/website-kornevaphotos",
+  "type": "project",
+  "require": {
+    "php": "8.1.*",
+    "vlucas/phpdotenv": "^v5.6.2",
+    "smarty/smarty": "^v4.5.6",
+    "netresearch/jsonmapper": "^v5.0.0",
+    "phpmailer/phpmailer": "^v6.10.0",
+    "nadar/quill-delta-parser": "^3.5.0",
+    "ext-mysqli": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "ext-imagick": "*",
+    "ext-memcached": "*",
+    "ext-ftp": "*",
+    "ext-zlib": "*",
+    "ext-simplexml": "*",
+    "ext-iconv": "*",
+    "ext-intl": "*",
+    "ext-zip": "*"
+  },
+  "description": "website-kornevaphotos"
+}
