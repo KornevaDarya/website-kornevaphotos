@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-    <title>ИНФО</title>
-    <link rel="stylesheet" href="оформлениеИнфо.css">
-</head>
-<body>
-	<ul class="menu">
-        <li class="portfolioNav"><a>ПОРТФОЛИО</a>
-    		<ul class="submenu">
-                    <li><a href="Индивидуальные.html">индивидуальные</a></li>
-                    <li><a href="Парные.html">парные</a></li>
-    				<li><a href="Свадебные.html">свадебные</a></li>
-    		</ul>
-        </li>
-        <a href="Прайс.html" class="priceNav">ПРАЙС</a>
-        <a href="Инфо.html" class="infoNav">ИНФО</a>
-        <a href="главная.html" class="mainNav">KORNEVAPHOTOS</a>
-        <a href="Обо мне.html" class="aboutMeNav">ОБО МНЕ</a>
-		<a href="Контакты.html" class="kontactNav">КОНТАКТЫ</a>
-	</ul>
-	<div class="btn-up btn-up_hide">&#94;</div>
+{extends "page.tpl"}
+
+{block main}
+    <div class="btn-up btn-up_hide">&#94;</div>
 	<div class="questions">
 	<h1>Часто задаваемые вопросы</h1>
 	<div><h2>Что лучше надеть на съемку?</h2>Образ всегда подбирается под идею фотосессии. Но лучше всего в кадре смотрятся однотонные веши, без мелких принтов.
@@ -40,6 +21,4 @@
 	<div><h2>Как выбрать локацию для съемки?</h2>После обсуждения пожеланий и идеи фотосессии я предлагаю разные варианты, где ее можно провести.
 	У меня большой список локаций в городе, на природе, в парках. Большая подборка фотостудии на разный вкус и кошелек.</div>
 	</div>
-	<script src="стрелка.js"></script>
-</body>
-</html>
+{/block}

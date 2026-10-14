@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-    <title>ПРАЙС</title>
-    <link rel="stylesheet" href="оформлениеПрайс.css">
-</head>
-<body>
-	<ul class="menu">
-        <li class="portfolioNav"><a>ПОРТФОЛИО</a>
-    		<ul class="submenu">
-                    <li><a href="Индивидуальные.html">индивидуальные</a></li>
-                    <li><a href="Парные.html">парные</a></li>
-    				<li><a href="Свадебные.html">свадебные</a></li>
-    		</ul>
-        </li>
-        <a href="Прайс.html" class="priceNav">ПРАЙС</a>
-        <a href="Инфо.html" class="infoNav">ИНФО</a>
-        <a href="главная.html" class="mainNav">KORNEVAPHOTOS</a>
-        <a href="Обо мне.html" class="aboutMeNav">ОБО МНЕ</a>
-		<a href="Контакты.html" class="kontactNav">КОНТАКТЫ</a>
-	</ul>
-	<h2>Съемочные пакеты</h2>
+{extends "page.tpl"}
+
+{block main}
+    <h2>Съемочные пакеты</h2>
 	<div class="packets">
 	<div class="packet1">
 		<br>
@@ -55,5 +36,4 @@
 		<h3 style="margin-top: 35px">4000 р.</h3>
 	</div>
 	</div>
-</body>
-</html>
+{/block}

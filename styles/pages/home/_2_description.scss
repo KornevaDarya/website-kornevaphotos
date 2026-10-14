@@ -1,0 +1,16 @@
+.description__content {
+	display: grid;
+	font-family: Georgia;
+	text-align: right;
+	padding: 130px 110px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 2.2;
+	grid-column-gap: 20vw;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1.5fr 3fr;
+}
+.quote{
+	font-size: 36px;
+	text-align: left;
+}

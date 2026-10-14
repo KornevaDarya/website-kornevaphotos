@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-    <title>СВАДЕБНЫЕ</title>
-    <link rel="stylesheet" href="оформлениеСвадебные.css">
-</head>
-<body>
-	<ul class="menu">
-        <li class="portfolioNav"><a>ПОРТФОЛИО</a>
-    		<ul class="submenu">
-                    <li><a href="Индивидуальные.html">индивидуальные</a></li>
-                    <li><a href="Парные.html">парные</a></li>
-    				<li><a href="Свадебные.html">свадебные</a></li>
-    		</ul>
-        </li>
-        <a href="Прайс.html" class="priceNav">ПРАЙС</a>
-        <a href="Инфо.html" class="infoNav">ИНФО</a>
-        <a href="главная.html" class="mainNav">KORNEVAPHOTOS</a>
-        <a href="Обо мне.html" class="aboutMeNav">ОБО МНЕ</a>
-		<a href="Контакты.html" class="kontactNav">КОНТАКТЫ</a>
-	</ul>
-	<div class="btn-up btn-up_hide">&#94;</div>
+{extends "page.tpl"}
+
+{block main}
+    <div class="btn-up btn-up_hide">&#94;</div>
 	<div class="gallery">
         <img class="image" src="фотографии\63.jpeg" alt="Image 63">
 		<img class="image" src="фотографии\64.jpeg" alt="Image 64">
@@ -40,6 +21,4 @@
 		<img class="image" src="фотографии\78.JPG" alt="Image 78">
 		<img class="image" src="фотографии\79.JPG" alt="Image 79">
 	</div>
-	<script src="стрелка.js"></script>
-</body>
-</html>
+{/block}

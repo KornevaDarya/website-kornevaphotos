@@ -1,0 +1,33 @@
+.gallery__content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+.images {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+.image {
+	width: 25%;
+	object-fit: cover;
+	padding: 0px 6px 0px 0px;
+}
+.prev, .next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
