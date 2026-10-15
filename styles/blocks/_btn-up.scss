@@ -1,0 +1,15 @@
+.btn-up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.btn-up_hide {
+    display: none;
+}

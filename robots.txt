@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /node_modules
+Disallow: /php
+Disallow: /vendor
+Clean-param: roistat&roistat_referrer&roistat_pos&rs&utm_source&utm_campaign&utm_term&utm_medium&utm_content /*
+Host: https://kornevaphotos.ru
+Sitemap: https://kornevaphotos.ru/sitemap.xml
